@@ -205,5 +205,24 @@ background-color: var(--main-blue-light);
   transform: translateY(0.5rem);
   color: var(--main-red);
 }
-
 /* contacts section end */
+
+/* footer start */
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  border-top: 4px solid var(--main-blue);
+}
+footer p{
+  margin: 2rem;
+  font-size: 1.8rem;
+}
+.footer-link{
+  color: var(--main-blue-light);
+  line-height: 2px;
+}
+.footer-link:hover{
+  color: var(--main-gray);
+}
+/* footer end */
