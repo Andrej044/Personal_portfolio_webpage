@@ -10,10 +10,12 @@
 --main-red-lighter:#FF9773;
 --main-red-darker:#A62A00;
 --main-blue:#0A67A3;
+--main-blue-light:#5A6AA0;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -33,5 +35,49 @@ ul{
 
 a{
     text-decoration: none;
-    color: var(--main-blue);
+    color: var(--main-white);
 }
+
+/* navbar start */
+.nav{
+  width: 100%;
+  position:fixed;
+  display: flex;
+  justify-content: flex-end;
+  top:0;
+  left:0;
+  padding: 2rem 2rem;
+  background-color: var(--main-gray);
+  font-size: 1.8rem;
+}
+.navbar-list{
+  position: relative;
+  margin-right: 2rem;
+}
+
+.navbar-link{
+  display: inline-block;
+  font-size: 2.2rem;
+  padding: 0.75rem 2rem;
+}
+.navbar-link:hover{
+  color:var(--main-red);
+}
+.two:hover ~ hr {
+  margin-left: 33%;
+}
+.three:hover ~ hr {
+  margin-left: 66%;
+}
+hr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: .5rem;
+  width: 30%;
+  margin: 0;
+  background: var(--main-red);
+  border: none;
+  transition: .3s ease-in-out;
+}
+/* navbar end */
