@@ -1,12 +1,37 @@
-*{
+*,::after,::before{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-ul{
-  list-style: none;
-  display: flex;
+:root{
+--main-white:#f0f0f0;
+--main-gray:#303841;
+--main-red: #FF4100;
+--main-red-lighter:#FF9773;
+--main-red-darker:#A62A00;
+--main-blue:#0A67A3;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: Raleway, sans-serif;
+  background-color: var(--main-red);
+  color:var(--main-white);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Poppins, sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
 a{
-  text-decoration: none;
+    text-decoration: none;
+    color: var(--main-blue);
 }
