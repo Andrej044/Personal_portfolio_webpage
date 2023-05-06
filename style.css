@@ -226,3 +226,15 @@ footer p{
   color: var(--main-gray);
 }
 /* footer end */
+
+
+@media only screen and (max-width: 768px) {
+  html{
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  html{
+    font-size: 40%;
+  }
+}
